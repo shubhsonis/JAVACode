@@ -1,0 +1,13 @@
+// 1. Write a Java program to concatenate Two strings
+import java.util.Scanner;
+class StrConcat {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 2 String: ");
+        String str1 = sc.nextLine();
+        String str2 = sc.nextLine();
+
+        System.out.println(str1 +" "+ str2);
+    }
+}
+

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Prime extends Exception {
+	public Prime() {
+		super("Not a prime number ");
+	}
+}
+class Check {
+	public void check(int n) throws Prime {
+		int count=0;
+		for(int i=1; i<=n; i++) {
+			if(n%i==0) 
+				count++;
+		}
+		if(count==2)
+			System.out.println("Prime Number ");
+		else 
+		throw new Prime();
+	}
+}
+
+class Main {
+	public static void main(String args[]) throws Prime {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Entert the number : ");
+		int n = sc.nextInt();
+		Check obj = new Check();
+		obj.check(n);
+	}
+}

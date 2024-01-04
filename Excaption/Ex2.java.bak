@@ -1,0 +1,5 @@
+class Excep {
+	public int m1() {
+		return 100;
+	}
+}

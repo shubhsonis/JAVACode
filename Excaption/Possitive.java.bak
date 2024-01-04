@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Possitive extends Exception{
+	public Possitive() {
+		super("Input the Possitive number");
+	}
+}
+
+class Main {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the even number ");
+		int num = sc.nextInt();
+		try {
+			if(num<0) 
+				throw new Possitive();
+			else 
+				System.out.println("Thanks for input even number");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("At the end");
+	}
+}
